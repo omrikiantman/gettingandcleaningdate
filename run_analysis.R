@@ -19,7 +19,7 @@ testSubjectFile <- file.path(dataFolder,"test","subject_test.txt")
 featuresFile <- file.path(dataFolder,"features.txt")
 activitesFile <- file.path(dataFolder,"activity_labels.txt")
 #Require relevant R packages
-packagesToRequire <- c("dplyr","tidyr")
+packagesToRequire <- c("dplyr")
 lapply(packagesToRequire,require,character.only = TRUE)
 source("utils.r")
 

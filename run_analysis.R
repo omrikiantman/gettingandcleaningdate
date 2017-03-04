@@ -48,7 +48,7 @@ meanStdColumnNames <- grep("-(mean|std)",features$V2, value = TRUE)
 data <- data %>% select(meanStdColumnNumbers)
 
 #Use descriptive activity names to name the activities in the data set
-#by locating the activitiy label according to the value in 
+#by locating the activitiy label according to the value in the label
 label_names <- as.data.frame(sapply(labels,function(x){activites[x,2]}))
 
 #Appropriately labels the data set with descriptive variable names.

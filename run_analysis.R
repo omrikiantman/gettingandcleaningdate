@@ -56,6 +56,12 @@ names(data) <- meanStdColumnNames
 names(label_names) <- c("activity")
 names(subjects) <- c("subject_number")
 
+names(data)<-gsub("^t", "time", names(data))
+names(data)<-gsub("^f", "frequency", names(data))
+names(data)<-gsub("Acc", "Accelerometer", names(data))
+names(data)<-gsub("Gyro", "Gyroscope", names(data))
+names(data)<-gsub("Mag", "Magnitude", names(data))
+names(data)<-gsub("BodyBody", "Body", names(data))
 ##From the data set in step 4, creates a second, independent tidy data set
 ##with the average of each variable for each activity and each subject.
 unitedData <- cbind(subjects,label_names,data)

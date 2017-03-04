@@ -14,12 +14,12 @@
 - activitesFile : full file path to the activity labels file
 
 ##variables
-- zipFileURL - the URL for the zipped data
+- zipFileURL : the URL for the zipped data
 - data : combined data from test & train sources
-- labels <-combined labels from test & train sources
-- subjects <- combined subjects from test & train sources
-- features <- features data
-- activites <- activites data
+- labels : combined labels from test & train sources
+- subjects : combined subjects from test & train sources
+- features : features data
+- activites : activites data
 
 ##transformations
 
